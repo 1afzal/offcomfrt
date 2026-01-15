@@ -1,4 +1,5 @@
 import React from "react";
+import MiniProduct from "./MiniProduct";
 
 function Landing(){
     return(
