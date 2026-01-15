@@ -24,7 +24,7 @@ function Landing(){
             </div>
 
             <div className="flex-1 text-6xl flex justify-center items-center font-black ">
-                <h1>Hope you do good in life</h1>
+                <h1>Hope you do good in life.</h1>
             </div>
             <div className="h-16">
                 <button className="bg-black text-white px-2 py-1">
