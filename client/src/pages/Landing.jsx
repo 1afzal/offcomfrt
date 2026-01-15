@@ -1,7 +1,9 @@
 import React from "react";
 import MiniProduct from "./MiniProduct";
+import { useNavigate } from "react-router-dom";
 
 function Landing(){
+    const navigate = useNavigate()
     return(
         <div className="m-2 h-screen flex flex-col">
             <div className="h-16">
@@ -28,7 +30,9 @@ function Landing(){
                 <h1>Hope you do good in life.</h1>
             </div>
             <div className="h-16">
-                <button className="bg-black text-white px-2 py-1">
+                <button
+                onClick={()=> navigate("/products")}
+                className="bg-black text-white px-3 py-2">
                     EXPLORE
                 </button>
             </div>
