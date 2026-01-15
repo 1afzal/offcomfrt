@@ -5,6 +5,7 @@ import ProductPage from "./pages/ProductPage";
 import Landing from "./pages/Landing";
 import MiniProduct from "./pages/MiniProduct";
 import { CartProvider } from './context/CartContext';
+import  {products} from './data/product'
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
           <Route path="/" element={
             <>
               <Landing/>
-              <MiniProduct/>
+              <MiniProduct products={products}/>
             </>
           } />
             <Route path="/products" element={<Home />} />
-            <Route path="/product/:id" element={<ProductPage />} />
+            <Route path="/products/:id" element={<ProductPage />} />
         </Routes>
       </BrowserRouter>
     </CartProvider>
